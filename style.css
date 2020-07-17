@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    
+    background-image: url("projet.jpeg");
+    background-color: rgba(109, 110, 168, 0.5);
+    background-attachment: fixed;    
+    height: 100%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*      HEADER    */
+.header {
+    margin: 50px 20px;
+}
+
+/*      Sub-Container   */
+.sub-container {
+    padding: 30px;
+    width: 43vw;
+    height: 100%;
+}
+
+/*      CONTENT    */
+.content {
+    background-color: rgba(40, 40, 71, 0.8);
+    font-size: 20px;
+    border-radius: 5px;
+    
+}
+
+::placeholder {
+    color: #848484;
+    text-indent: 10px;
+    font-size: 17px;
+}
+
+form > div {
+    padding: 15px 10px;
+}
+#name, #mail, #age, #favorite {
+    width: 100%;
+    height: 35px;
+    margin-top: 7px;
+    border-radius: 5px;
+}
+
+/* SELECT BAR */
+#role {
+    width: 100%;
+    height: 35px;
+    margin-top: 7px;
+    border-radius: 5px;
+    color: #848484;
+    text-indent: 10px;
+    font-size: 17px;
+}
+
+/*  RADIO BUTTON    */
+
+
+#Definitely, #Maybe, #notSure {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.recommandation {
+    display: flex;
+    margin: 10px 0;
+}
