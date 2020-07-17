@@ -2,19 +2,22 @@ body {
     margin: 0;
     padding: 0;
     color: white;
-    
+    background-image: url("projet.jpeg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .container{
     
-    background-image: url("projet.jpeg");
-    background-color: rgba(109, 110, 168, 0.5);
-    background-attachment: fixed;    
+    
+    background-color: rgba(115, 115, 188, 0.7);
+        
     height: 100%;
   
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  
     
     display: flex;
     flex-direction: column;
@@ -25,6 +28,13 @@ body {
 /*      HEADER    */
 .header {
     margin: 50px 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-weight: normal;
+}
+.header > i {
+    font-size: 20px;
 }
 
 /*      Sub-Container   */
@@ -81,4 +91,47 @@ form > div {
 .recommandation {
     display: flex;
     margin: 10px 0;
+}
+
+/*  FEATURES    */
+select, option {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    height: 35px;
+    margin-top: 7px;
+    border-radius: 5px;
+    color: #848484;
+    text-indent: 10px;
+    font-size: 17px;
+}
+option {
+    color: black;
+}
+
+/*      IMPROVEMENT     */
+.improvement >div > input {
+    transform: scale(1.5);
+    margin: 10px 10px 10px 0;
+}
+
+/*  SUGGESTIONS */
+textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 10px;
+}
+textarea::placeholder {
+    color: black;
+}
+
+
+/*   SUBMIT   */
+#submit {
+    width: 100%;
+    height: 7vh;
+    background-color: #37AF65;
+    color: azure;
+    border-radius: 3px;
+    border: 0cm;
+    font-size: 17px;
 }

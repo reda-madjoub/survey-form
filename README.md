@@ -1,2 +1,2 @@
 # survey-form
-FrreCodeCamp Web Design Challenge
+FreeCodeCamp Web Design Challenge
