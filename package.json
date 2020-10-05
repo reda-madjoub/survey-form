@@ -1,0 +1,19 @@
+{
+  "name": "survey_form",
+  "version": "1.0.0",
+  "description": "FreeCodeCamp Web Design Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reda-madjoub/survey-form.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reda-madjoub/survey-form/issues"
+  },
+  "homepage": "https://github.com/reda-madjoub/survey-form#readme"
+}
