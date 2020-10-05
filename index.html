@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
     <link rel="stylesheet" href="style.css">
+    <link href="mobile.css" media="(max-width: 860px)" rel="stylesheet"  type="text/css" />
+
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>FreeCodeCamp Survey Form</h1>
-            <i>Thank you for taking the time to help us improve the platform</i>
-        </div>
+        <header class="header">
+            <h1>freeCodeCamp Survey Form</h1>
+            <p>Thank you for taking the time to help us improve the platform</p>
+        </header>
         <div class="content">
-            <div class="sub-container">
                 <form action="" method="POST">
                     <!-- NOM -->
                     <div>
-                        <label for="name">Nom </label>
+                        <label for="name">Name </label>
                         <br>
                         <input type="text" id="name" name="name" placeholder="Enter your name ..." required>
                     </div>
@@ -35,10 +36,10 @@
                     </div>
                     <!-- ROLE -->
                     <div>
-                        <label for="role">Which option best describes your current role? </label>
+                        <p>Which option best describes your current role? </p>
                         <br>
-                        <select name="role" id="role">
-                            <option disabled selected value>Select current role</option>
+                        <select name="role" id="role"required>
+                            <option disabled selected>Select current role</option>
                             <option value="student">Student</option>
                             <option value="fullTimeJob">Full Time Job</option>
                             <option value="fullTimeLearner">Full Time Learner</option>
@@ -51,7 +52,7 @@
                     <div class="recommandation-group">
                         <label for="recommandation">Would you recommend freeCodeCamp to a friend?</label>
                         <div class="recommandation">
-                            <input type="radio" id="Definitely" name="Definitely"> 
+                            <input type="radio" id="Definitely" name="Definitely" checked> 
                             <label for="Definitely">Definitely</label>
                         </div>
                         <div class="recommandation">
@@ -67,13 +68,12 @@
                     <!-- FAVORITE FEATURES -->
                     <div>
                         <p>What is your favorite feature of freeCodeCamp? </p>
-                        <select name="favorite" id="favorite">
+                        <select name="favorite" id="favorite" required>
                             <option  disabled selected value>Select an option</option>
                             <option value="challenges">Challenges</option>
                             <option value="projects">Projects</option>
                             <option value="community">Community</option>
                             <option value="openSource">Open Source</option>
-    
                         </select>
                     </div>
                     <!-- IMPROVEMENT -->
@@ -126,17 +126,15 @@
                         </div>
                     </div>
                     <!-- SUGGESTIONS -->
-                    <div>
+                    <div class="textarea">
                         <p>Any comments or suggestions?</p>
-                        <textarea id="suggestions" name="suggestions" placeholder="Enter your comment here ...">
-                        </textarea>
+                        <textarea id="suggestions" name="suggestions" placeholder="Enter your comment here ..."></textarea>
                     </div>
                     <!--  SUBMIT  -->
                     <div>
                         <button type="submit" id="submit">Submit</button>
                     </div>
                 </form>
-            </div>
             
         </div>
     

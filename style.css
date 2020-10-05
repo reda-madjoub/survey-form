@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    overflow-x: hidden;
+}
 body {
     margin: 0;
     padding: 0;
@@ -7,18 +16,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .container{
-    
-    
-    background-color: rgba(115, 115, 188, 0.7);
-        
+    background: rgba(115, 115, 188, 0.7);  
     height: 100%;
-  
-  
-    
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,26 +28,38 @@ body {
 }
 
 /*      HEADER    */
-.header {
+header {
     margin: 50px 20px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    font-weight: normal;
+
 }
-.header > i {
+header > h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    overflow-y: hidden;
+    font-weight: 400;
+    
+}
+header > p {
     font-size: 20px;
+    font-style: italic;
 }
 
 /*      Sub-Container   */
-.sub-container {
+/* .sub-container {
     padding: 30px;
     width: 43vw;
     height: 100%;
+} */
+.content div {
+    margin-bottom: 17px;
 }
 
 /*      CONTENT    */
 .content {
+    padding: 0px 30px;
     background-color: rgba(40, 40, 71, 0.8);
     font-size: 20px;
     border-radius: 5px;
@@ -55,7 +69,7 @@ body {
 ::placeholder {
     color: #848484;
     text-indent: 10px;
-    font-size: 17px;
+    font-size: 24px;
 }
 
 form > div {
@@ -63,7 +77,7 @@ form > div {
 }
 #name, #mail, #age, #favorite {
     width: 100%;
-    height: 35px;
+    height: 60px;
     margin-top: 7px;
     border-radius: 5px;
 }
@@ -71,20 +85,20 @@ form > div {
 /* SELECT BAR */
 #role {
     width: 100%;
-    height: 35px;
     margin-top: 7px;
     border-radius: 5px;
     color: #848484;
     text-indent: 10px;
-    font-size: 17px;
+    font-size: 27px;
 }
+
 
 /*  RADIO BUTTON    */
 
 
 #Definitely, #Maybe, #notSure {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     margin-right: 10px;
 }
 
@@ -95,43 +109,55 @@ form > div {
 
 /*  FEATURES    */
 select, option {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: block;
     width: 100%;
-    height: 35px;
     margin-top: 7px;
     border-radius: 5px;
     color: #848484;
     text-indent: 10px;
-    font-size: 17px;
+    font-size: 27px;
+    padding: 6px 12px;
 }
-option {
+option, input {
     color: black;
+    padding: 6px 12px;
 }
 
+
+
 /*      IMPROVEMENT     */
-.improvement >div > input {
-    transform: scale(1.5);
-    margin: 10px 10px 10px 0;
+.improvement div {
+    padding-left: 10px;
+}
+.improvement > div > input {
+    transform: scale(2.2);
+}
+.improvement > div > label {
+    padding-left: 10px;
 }
 
 /*  SUGGESTIONS */
 textarea {
     width: 100%;
-    min-height: 120px;
-    padding: 10px;
+    min-height: 180px;
 }
 textarea::placeholder {
-    color: black;
+    color: #878c90;
+    padding: 10px 0px 0px 10px;
 }
 
 
 /*   SUBMIT   */
 #submit {
     width: 100%;
-    height: 7vh;
+    height: 10vh;
     background-color: #37AF65;
     color: azure;
     border-radius: 3px;
     border: 0cm;
-    font-size: 17px;
+    font-size: 27px;
+    transition: 0.2s ;
+}
+#submit:hover {
+    background-color: #21633a;
 }

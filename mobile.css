@@ -1,0 +1,62 @@
+/* HEADER */
+
+header {
+    width: 100%;
+    padding: 0px 10px;
+    margin: 50px 0px 100px 0px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header > h1 {
+    width: 100%;
+    overflow-y: hidden;
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 50px;
+    padding-bottom: 100px;
+}
+header > p {
+    font-weight: 200;
+    font-size: 28px;
+    padding-bottom: 100px;
+    overflow-y: hidden;
+}
+
+
+
+/*  SUB-CONTAINER */
+
+form {
+    width: 100%;
+}
+
+label, select, input, textarea, .textarea > p, ::placeholder {
+    font-size: 26px;
+}
+
+
+
+/* 440px max */
+@media screen and (max-width: 440px) {
+        
+    header {
+        margin: 20px 0px;
+    }
+header > h1 {
+    width: 100%;
+    overflow-y: hidden;
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 40px;
+    padding: 0px;
+}
+header > p {
+    font-weight: 200;
+    font-size: 18px;
+}
+
+  }
